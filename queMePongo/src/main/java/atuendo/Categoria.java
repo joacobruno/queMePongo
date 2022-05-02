@@ -1,10 +1,6 @@
 package atuendo;
 
-import java.util.List;
 
-public interface Categoria {
-
-	List <String> getPartes();
-
+public enum Categoria {
+  PARTE_SUPERIOR, CALZADO, PARTE_INFERIOR, ACCESORIOS // etc...
 }
-

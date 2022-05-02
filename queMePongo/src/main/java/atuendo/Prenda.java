@@ -1,40 +1,35 @@
-package atuendo;
+ package atuendo;
 
-public class Prenda {
-	String colorPrincipal;
-	String colorSecundario = null;
-	String tela;
-	Categoria tipoCategoria;
-	String tipoPrenda;
-	
-	public Prenda(String colorPrincipal, String tela, Categoria tipoCategoria, String tipoPrenda) {
-		
-		if(!tipoCategoria.getPartes().contains(tipoPrenda)) {
-			//Throw new error 
-		}else {
-			this.colorPrincipal = colorPrincipal;
-			this.tela = tela;
-			this.tipoCategoria = tipoCategoria;
-			this.tipoPrenda = tipoPrenda;
-			}		
-		}
+ public class Prenda {
+
+	  private TipoPrenda tipo;
+	  private Composicion composicion;
+	  private Trama trama;
+	  private Color colorPrimario;
+	  private Color colorSecundario;
 
 
+	  public Prenda(TipoPrenda tipo, Color colorPrimario, Color colorSecundario,
+	      Composicion composicion, Trama trama) {
+	    this.tipo = tipo;
+	    this.colorPrimario = colorPrimario;
+	    this.colorSecundario = colorSecundario;
+	    this.composicion = composicion;
+	    this.trama = trama;
+	  }
 
-	public Prenda(String colorPrincipal, String colorSecundario, String tela, Categoria tipoCategoria,
-			String tipoPrenda) {
-		
-		if(!tipoCategoria.getPartes().contains(tipoPrenda)){ 
-			//Throw new error
-		}else {
-		this.colorPrincipal = colorPrincipal;
-		this.colorSecundario = colorSecundario;
-		this.tela = tela;
-		this.tipoCategoria = tipoCategoria;
-		this.tipoPrenda = tipoPrenda;
-		}
+	  public Trama getTrama() {
+	    return this.trama;
+	  }
+
+	  public boolean esPrendaValida() {
+	    return (this.tipo != null && this.composicion != null && this.colorPrimario != null);
+	  }
+
+	  public boolean tieneCategoria(Categoria parteSuperior) {
+	    return (this.tipo.getCategoria() == parteSuperior);
+	  }
+
+
+
 	}
-	
-	
-	
-}
