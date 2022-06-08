@@ -1,16 +1,13 @@
-package ropa;
+package atuendo;
+import atuendo.Propuesta;
 
-import ropa.Propuesta;
 
 import java.util.*;
 
-/**
- *
- */
-public class PropuestaAgregado extends Propuesta {
+public class PropuestaAgregada extends Propuesta {
 
 
-  public PropuestaAgregado(Prenda prenda) {
+  public PropuestaAgregada(Prenda prenda) {
     super(prenda);
   }
 

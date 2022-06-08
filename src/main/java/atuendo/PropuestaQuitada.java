@@ -1,15 +1,15 @@
 package ropa;
 
-import ropa.Guardaropa;
-import ropa.Prenda;
-import ropa.Propuesta;
+import atuendo.Guardaropa;
+import atuendo.Prenda;
+import atuendo.Propuesta;
 import java.util.*;
 
 
-public class PropuestaQuitado extends Propuesta {
+public class PropuestaQuitada extends Propuesta {
 
 
-  public PropuestaQuitado(Prenda prenda) {
+  public PropuestaQuitada(Prenda prenda) {
     super(prenda);
   }
 

@@ -1,12 +1,7 @@
-package ropa;
-
-import ropa.Guardaropa;
+package atuendo;
 
 import java.util.*;
 
-/**
- *
- */
 public class Usuario {
 
     private final Set<Guardaropa> guardaropas = new HashSet<>();

@@ -1,4 +1,4 @@
-package ropa;
+package atuendo;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -13,7 +13,7 @@ public class Atuendo {
     sugerenciasDelAtuendo.put(prenda.getCategoria(),prenda);
   }
 
-  public Prenda getDeCategoria(Categoria categoria){
+  public Prenda getCategoria(Categoria categoria){
     if (noHayDeCategoria(categoria)) throw new NoHayDeCategoriaException("No hay prendas de esa categoria en el atuendo!");
     return sugerenciasDelAtuendo.get(categoria);
   }

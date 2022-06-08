@@ -1,8 +1,5 @@
-package ropa;
+package atuendo;
 
-/**
- *
- */
 public abstract class Propuesta {
 
 

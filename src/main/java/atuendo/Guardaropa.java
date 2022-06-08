@@ -1,7 +1,6 @@
-package ropa;
+package atuendo;
 
-import clima.Clima;
-import clima.InformanteClima;
+import clima.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
